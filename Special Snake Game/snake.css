@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-board {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    background-color: #00ff00;
+}
+
+.apple {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff0000;
+}
+
+.bonus-apple {
+    background-color: #ffa500;
+    border-radius: 50%;
+}
+
+.bonus-apple-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.bonus-apple-medium {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.bonus-apple-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000;
+}
