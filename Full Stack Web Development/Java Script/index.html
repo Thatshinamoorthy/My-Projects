@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External java script link-->
+     <script src="script.js"></script>
+</head>
+<body>
+    <!-- Internal java script-->
+     <script>
+            //loops
+            //for loop
+            for(var i=0;i<=10;i++){
+                console.log(i);
+            }
+
+            //while loop
+            var i=10;
+            while(i>10){
+                console.log(i);
+                i--;
+            }
+
+            //forEach loop
+            var arr=[1,2,3,4,5];
+            arr.forEach(function(arr1){
+                console.log(arr1);
+            });
+
+            //conditional statements
+            var i=10;
+            if(i=10){
+                console.log("i is equal to 10");
+            }
+            else{
+                console.log("i is not equal to 10");
+            }
+            //switch case statement
+            var day="Monday";
+            switch(day){
+                case "Monday" : console.log("Today is Monday");
+                break
+                case "Tuesday" : console.log("Today is Tuesday");
+                break
+                case "Wednesday" : console.log("Today is Wednesday");
+                break
+                case "Thursday" : console.log("Today is Thursday");
+                break
+                case "Friday" : console.log("Today is Friday");
+                break
+                case "Saturday" : console.log("Today is Saturday");
+                break
+                case "Sunday" : console.log("Today is Sunday");
+                break
+                default : console.log("Invalid day");
+            }
+
+            //object declaration
+            var person={
+                name : "Thatshinamoorthy",
+                age : 19,
+                address : "Pallipalayam",
+                fav_color : {
+                    color1 : "Orange",
+                    color2 : "green"
+                }
+            }
+            console.log(person);
+            console.log(person.name);
+            console.log(person.fav_color.color1);
+
+            //Object Constructor
+            function who(name,age,address,fav_color){
+                this.name=name;
+                this.age=age;
+                this.fav_color=fav_color;
+            }
+            var person1=new who("Thatshinamoorthy",19,"Pallipalayam","Orange");
+            console.log(person1.name);
+     </script>
+</body>
+</html>
